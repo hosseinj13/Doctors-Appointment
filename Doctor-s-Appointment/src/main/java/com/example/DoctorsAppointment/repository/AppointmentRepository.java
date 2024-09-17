@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
     boolean existsByAvailableTimeSlotAndAppointmentStatus(AvailableTimeSlot timeSlot, AppointmentStatus status);
-    
+
 
 }
 
